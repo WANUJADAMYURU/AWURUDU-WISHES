@@ -23,28 +23,28 @@
 #style {
     transition: color 0.5s ease; /* Smooth transition for color change */
   }
-#bg-img {
-        /* The image used */
-  background-image: url("bg.png");
-  z-index: 1;
-  
-  /* Add the blur effect */
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
-  
-  
-  height: 1600px;
-  width: 100%;
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    }
-#sun {
-        /* The image used */
-  background-image: url("sun.gif");
+
+#text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */ 
+  color: gold;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+h1 {font-size: 70px;
+}
+.bg-img {
+        /* The image used */
+  background-image: url("bg.gif");
+  z-index: 1;
   
   /* Add the blur effect */
   filter: blur(0px);
@@ -59,23 +59,6 @@
   background-repeat: no-repeat;
   background-size: cover;  
 }
-#text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */ 
-  color: gold;
-  font-family: sans-serif;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
-}
-h1 {font-size: 70px;
-}
 .row {
   opacity: 0;
   margin: 10px;
@@ -87,9 +70,8 @@ h1 {font-size: 70px;
 </style>
 </head>
 <body>
-<div id="bg-img">
+<div class="bg-img">
 <div id="container">
-<div class="row" id="sun">
 <div class="row" id="text">
   <div class="row"><h1 style="font-size: 40px;">ලැබුවා වූ</h1></div>
   <div class="row"><h1 style="font-size: 40px;">මේ සිංහල සහ දෙමළ අලුත් අවුරුද්ද</h1></div>
@@ -98,7 +80,6 @@ h1 {font-size: 70px;
   <div class="row"><h1>අලුත් අවුරුද්ද</h1></div>
   <div class="row"><h1>වේවා!</h1></div>
   <div class="row"><p style="color: gold;font-family: sans-serif;font-size: 30px;"><span id="icon" class="material-symbols-outlined">folded_hands</span>FROM WANUJA DAMYURU.</p></div>
-</div>
 </div>
 </div>
 </div>
